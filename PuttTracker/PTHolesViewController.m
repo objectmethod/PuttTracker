@@ -48,7 +48,9 @@
 }
 
 - (void) initialize {
+	NSLog(@"self.scrollView.frame: %@", NSStringFromCGRect(self.scrollView.frame));
 	self.round = [PTRound insertInManagedObjectContext:self.managedObjectContext];
+	NSLog(@"self.scrollView.frame: %@", NSStringFromCGRect(self.scrollView.frame));
 }
 
 #pragma mark - managedObjectContext
@@ -62,6 +64,8 @@
 #pragma mark - load view
 
 - (void)viewDidLoad {
+	NSLog(@"self.view.frame: %@", NSStringFromCGRect(self.view.frame));
+	NSLog(@"self.scrollView.frame: %@", NSStringFromCGRect(self.scrollView.frame));
 	[super viewDidLoad];
 	[self addHoles];
 }
@@ -72,7 +76,9 @@
 	for (PTHole *hole in self.round.holes) {
 		PTHoleViewController *holeViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PTHoleViewController class])];
 		[self.holeViewControllers addObject:holeViewController];
+		holeViewController.view.frame = self.scrollView.bounds;
 		[self.scrollView addSubview:holeViewController.view];
+		NSLog(@"holeViewController.view.frame: %@", NSStringFromCGRect(holeViewController.view.frame));
 	}
 }
 
