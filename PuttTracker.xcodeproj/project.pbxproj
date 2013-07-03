@@ -6,7 +6,34 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5EDF1398178375C800E37127 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5EDF139B178375C800E37127 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				5EDF139C178375D600E37127 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		31235D7F189446209205A3EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A67F91701F4ABAA3A653FB /* libPods.a */; };
+		5E5176BA178476E50040D793 /* putting_green-(with-slices)_02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B0178476E50040D793 /* putting_green-(with-slices)_02.gif */; };
+		5E5176BB178476E50040D793 /* putting_green-(with-slices)_04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B1178476E50040D793 /* putting_green-(with-slices)_04.gif */; };
+		5E5176BC178476E50040D793 /* putting_green-(with-slices)_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B2178476E50040D793 /* putting_green-(with-slices)_05.png */; };
+		5E5176BD178476E50040D793 /* putting_green-(with-slices)_06.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B3178476E50040D793 /* putting_green-(with-slices)_06.gif */; };
+		5E5176BE178476E50040D793 /* putting_green-(with-slices)_07.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B4178476E50040D793 /* putting_green-(with-slices)_07.gif */; };
+		5E5176BF178476E50040D793 /* putting_green-(with-slices)_08.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B5178476E50040D793 /* putting_green-(with-slices)_08.gif */; };
+		5E5176C0178476E50040D793 /* putting_green-(with-slices)_09.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B6178476E50040D793 /* putting_green-(with-slices)_09.gif */; };
+		5E5176C1178476E50040D793 /* putting_green-(with-slices)_10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B7178476E50040D793 /* putting_green-(with-slices)_10.gif */; };
+		5E5176C2178476E50040D793 /* putting_green-(with-slices)_11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B8178476E50040D793 /* putting_green-(with-slices)_11.gif */; };
+		5E5176C3178476E50040D793 /* putting_green-(with-slices)_12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176B9178476E50040D793 /* putting_green-(with-slices)_12.gif */; };
+		5E5176C617847C590040D793 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176C417847C590040D793 /* menu-icon.png */; };
+		5E5176C717847C590040D793 /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5176C517847C590040D793 /* menu-icon@2x.png */; };
 		5EDF1354178371E400E37127 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1353178371E400E37127 /* UIKit.framework */; };
 		5EDF1356178371E400E37127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1355178371E400E37127 /* Foundation.framework */; };
 		5EDF1358178371E400E37127 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1357178371E400E37127 /* CoreGraphics.framework */; };
@@ -24,6 +51,16 @@
 		5EDF137A178371E400E37127 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1359178371E400E37127 /* CoreData.framework */; };
 		5EDF1382178371E400E37127 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EDF1380178371E400E37127 /* InfoPlist.strings */; };
 		5EDF1385178371E400E37127 /* PuttTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1384178371E400E37127 /* PuttTrackerTests.m */; };
+		5EDF138F1783726800E37127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDF138E1783726800E37127 /* Main.storyboard */; };
+		5EDF1392178372AF00E37127 /* PTHolesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1391178372AF00E37127 /* PTHolesViewController.m */; };
+		5EDF1395178372BD00E37127 /* PTHoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1394178372BD00E37127 /* PTHoleViewController.m */; };
+		5EDF13A11783764B00E37127 /* _PTRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF139E1783764B00E37127 /* _PTRound.m */; };
+		5EDF13A21783764B00E37127 /* PTRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF13A01783764B00E37127 /* PTRound.m */; };
+		5EDF13A41783766600E37127 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5EDF13A31783766600E37127 /* Podfile */; };
+		5EDF13AD178376D200E37127 /* _PTHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF13A6178376D200E37127 /* _PTHole.m */; };
+		5EDF13AE178376D200E37127 /* _PTPutt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF13A8178376D200E37127 /* _PTPutt.m */; };
+		5EDF13AF178376D200E37127 /* PTHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF13AA178376D200E37127 /* PTHole.m */; };
+		5EDF13B0178376D200E37127 /* PTPutt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF13AC178376D200E37127 /* PTPutt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +74,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53A67F91701F4ABAA3A653FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5176B0178476E50040D793 /* putting_green-(with-slices)_02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_02.gif"; sourceTree = "<group>"; };
+		5E5176B1178476E50040D793 /* putting_green-(with-slices)_04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_04.gif"; sourceTree = "<group>"; };
+		5E5176B2178476E50040D793 /* putting_green-(with-slices)_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "putting_green-(with-slices)_05.png"; sourceTree = "<group>"; };
+		5E5176B3178476E50040D793 /* putting_green-(with-slices)_06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_06.gif"; sourceTree = "<group>"; };
+		5E5176B4178476E50040D793 /* putting_green-(with-slices)_07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_07.gif"; sourceTree = "<group>"; };
+		5E5176B5178476E50040D793 /* putting_green-(with-slices)_08.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_08.gif"; sourceTree = "<group>"; };
+		5E5176B6178476E50040D793 /* putting_green-(with-slices)_09.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_09.gif"; sourceTree = "<group>"; };
+		5E5176B7178476E50040D793 /* putting_green-(with-slices)_10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_10.gif"; sourceTree = "<group>"; };
+		5E5176B8178476E50040D793 /* putting_green-(with-slices)_11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_11.gif"; sourceTree = "<group>"; };
+		5E5176B9178476E50040D793 /* putting_green-(with-slices)_12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "putting_green-(with-slices)_12.gif"; sourceTree = "<group>"; };
+		5E5176C417847C590040D793 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
+		5E5176C517847C590040D793 /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
 		5EDF1350178371E400E37127 /* PuttTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuttTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDF1353178371E400E37127 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EDF1355178371E400E37127 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +108,25 @@
 		5EDF1381178371E400E37127 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5EDF1383178371E400E37127 /* PuttTrackerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuttTrackerTests.h; sourceTree = "<group>"; };
 		5EDF1384178371E400E37127 /* PuttTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuttTrackerTests.m; sourceTree = "<group>"; };
+		5EDF138E1783726800E37127 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5EDF1390178372AF00E37127 /* PTHolesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHolesViewController.h; sourceTree = "<group>"; };
+		5EDF1391178372AF00E37127 /* PTHolesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHolesViewController.m; sourceTree = "<group>"; };
+		5EDF1393178372BD00E37127 /* PTHoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHoleViewController.h; sourceTree = "<group>"; };
+		5EDF1394178372BD00E37127 /* PTHoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHoleViewController.m; sourceTree = "<group>"; };
+		5EDF139D1783764B00E37127 /* _PTRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PTRound.h; sourceTree = "<group>"; };
+		5EDF139E1783764B00E37127 /* _PTRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PTRound.m; sourceTree = "<group>"; };
+		5EDF139F1783764B00E37127 /* PTRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRound.h; sourceTree = "<group>"; };
+		5EDF13A01783764B00E37127 /* PTRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRound.m; sourceTree = "<group>"; };
+		5EDF13A31783766600E37127 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5EDF13A5178376D200E37127 /* _PTHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PTHole.h; sourceTree = "<group>"; };
+		5EDF13A6178376D200E37127 /* _PTHole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PTHole.m; sourceTree = "<group>"; };
+		5EDF13A7178376D200E37127 /* _PTPutt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PTPutt.h; sourceTree = "<group>"; };
+		5EDF13A8178376D200E37127 /* _PTPutt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PTPutt.m; sourceTree = "<group>"; };
+		5EDF13A9178376D200E37127 /* PTHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHole.h; sourceTree = "<group>"; };
+		5EDF13AA178376D200E37127 /* PTHole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHole.m; sourceTree = "<group>"; };
+		5EDF13AB178376D200E37127 /* PTPutt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPutt.h; sourceTree = "<group>"; };
+		5EDF13AC178376D200E37127 /* PTPutt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPutt.m; sourceTree = "<group>"; };
+		F114D200137B44569F979B3D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +138,7 @@
 				5EDF1356178371E400E37127 /* Foundation.framework in Frameworks */,
 				5EDF1358178371E400E37127 /* CoreGraphics.framework in Frameworks */,
 				5EDF135A178371E400E37127 /* CoreData.framework in Frameworks */,
+				31235D7F189446209205A3EF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +156,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E5176AF178476E50040D793 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5E5176C417847C590040D793 /* menu-icon.png */,
+				5E5176C517847C590040D793 /* menu-icon@2x.png */,
+				5E5176B0178476E50040D793 /* putting_green-(with-slices)_02.gif */,
+				5E5176B1178476E50040D793 /* putting_green-(with-slices)_04.gif */,
+				5E5176B2178476E50040D793 /* putting_green-(with-slices)_05.png */,
+				5E5176B3178476E50040D793 /* putting_green-(with-slices)_06.gif */,
+				5E5176B4178476E50040D793 /* putting_green-(with-slices)_07.gif */,
+				5E5176B5178476E50040D793 /* putting_green-(with-slices)_08.gif */,
+				5E5176B6178476E50040D793 /* putting_green-(with-slices)_09.gif */,
+				5E5176B7178476E50040D793 /* putting_green-(with-slices)_10.gif */,
+				5E5176B8178476E50040D793 /* putting_green-(with-slices)_11.gif */,
+				5E5176B9178476E50040D793 /* putting_green-(with-slices)_12.gif */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		5EDF1347178371E400E37127 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +182,8 @@
 				5EDF137D178371E400E37127 /* PuttTrackerTests */,
 				5EDF1352178371E400E37127 /* Frameworks */,
 				5EDF1351178371E400E37127 /* Products */,
+				5EDF13A31783766600E37127 /* Podfile */,
+				F114D200137B44569F979B3D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +204,7 @@
 				5EDF1357178371E400E37127 /* CoreGraphics.framework */,
 				5EDF1359178371E400E37127 /* CoreData.framework */,
 				5EDF1376178371E400E37127 /* SenTestingKit.framework */,
+				53A67F91701F4ABAA3A653FB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,10 +212,28 @@
 		5EDF135B178371E400E37127 /* PuttTracker */ = {
 			isa = PBXGroup;
 			children = (
+				5E5176AF178476E50040D793 /* images */,
+				5EDF13A5178376D200E37127 /* _PTHole.h */,
+				5EDF13A6178376D200E37127 /* _PTHole.m */,
+				5EDF13A7178376D200E37127 /* _PTPutt.h */,
+				5EDF13A8178376D200E37127 /* _PTPutt.m */,
+				5EDF13A9178376D200E37127 /* PTHole.h */,
+				5EDF13AA178376D200E37127 /* PTHole.m */,
+				5EDF13AB178376D200E37127 /* PTPutt.h */,
+				5EDF13AC178376D200E37127 /* PTPutt.m */,
+				5EDF139D1783764B00E37127 /* _PTRound.h */,
+				5EDF139E1783764B00E37127 /* _PTRound.m */,
+				5EDF139F1783764B00E37127 /* PTRound.h */,
+				5EDF13A01783764B00E37127 /* PTRound.m */,
 				5EDF1364178371E400E37127 /* PTAppDelegate.h */,
 				5EDF1365178371E400E37127 /* PTAppDelegate.m */,
 				5EDF136D178371E400E37127 /* PuttTracker.xcdatamodeld */,
 				5EDF135C178371E400E37127 /* Supporting Files */,
+				5EDF138E1783726800E37127 /* Main.storyboard */,
+				5EDF1390178372AF00E37127 /* PTHolesViewController.h */,
+				5EDF1391178372AF00E37127 /* PTHolesViewController.m */,
+				5EDF1393178372BD00E37127 /* PTHoleViewController.h */,
+				5EDF1394178372BD00E37127 /* PTHoleViewController.m */,
 			);
 			path = PuttTracker;
 			sourceTree = "<group>";
@@ -168,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EDF1388178371E400E37127 /* Build configuration list for PBXNativeTarget "PuttTracker" */;
 			buildPhases = (
+				4401461C3C0B452C96C33071 /* Check Pods Manifest.lock */,
 				5EDF134C178371E400E37127 /* Sources */,
 				5EDF134D178371E400E37127 /* Frameworks */,
 				5EDF134E178371E400E37127 /* Resources */,
+				2AA2DFBE462046B098424C6C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +336,7 @@
 			targets = (
 				5EDF134F178371E400E37127 /* PuttTracker */,
 				5EDF1374178371E400E37127 /* PuttTrackerTests */,
+				5EDF1398178375C800E37127 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +350,20 @@
 				5EDF1368178371E400E37127 /* Default.png in Resources */,
 				5EDF136A178371E400E37127 /* Default@2x.png in Resources */,
 				5EDF136C178371E400E37127 /* Default-568h@2x.png in Resources */,
+				5EDF138F1783726800E37127 /* Main.storyboard in Resources */,
+				5EDF13A41783766600E37127 /* Podfile in Resources */,
+				5E5176BA178476E50040D793 /* putting_green-(with-slices)_02.gif in Resources */,
+				5E5176BB178476E50040D793 /* putting_green-(with-slices)_04.gif in Resources */,
+				5E5176BC178476E50040D793 /* putting_green-(with-slices)_05.png in Resources */,
+				5E5176BD178476E50040D793 /* putting_green-(with-slices)_06.gif in Resources */,
+				5E5176BE178476E50040D793 /* putting_green-(with-slices)_07.gif in Resources */,
+				5E5176BF178476E50040D793 /* putting_green-(with-slices)_08.gif in Resources */,
+				5E5176C0178476E50040D793 /* putting_green-(with-slices)_09.gif in Resources */,
+				5E5176C1178476E50040D793 /* putting_green-(with-slices)_10.gif in Resources */,
+				5E5176C2178476E50040D793 /* putting_green-(with-slices)_11.gif in Resources */,
+				5E5176C3178476E50040D793 /* putting_green-(with-slices)_12.gif in Resources */,
+				5E5176C617847C590040D793 /* menu-icon.png in Resources */,
+				5E5176C717847C590040D793 /* menu-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +378,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2AA2DFBE462046B098424C6C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		4401461C3C0B452C96C33071 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
 		5EDF1373178371E400E37127 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +419,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		5EDF139C178375D600E37127 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd PuttTracker\nmogenerator --template-var arc=true -m PuttTracker.xcdatamodeld/PuttTracker.xcdatamodel";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,6 +442,14 @@
 				5EDF1362178371E400E37127 /* main.m in Sources */,
 				5EDF1366178371E400E37127 /* PTAppDelegate.m in Sources */,
 				5EDF136F178371E400E37127 /* PuttTracker.xcdatamodeld in Sources */,
+				5EDF1392178372AF00E37127 /* PTHolesViewController.m in Sources */,
+				5EDF1395178372BD00E37127 /* PTHoleViewController.m in Sources */,
+				5EDF13A11783764B00E37127 /* _PTRound.m in Sources */,
+				5EDF13A21783764B00E37127 /* PTRound.m in Sources */,
+				5EDF13AD178376D200E37127 /* _PTHole.m in Sources */,
+				5EDF13AE178376D200E37127 /* _PTPutt.m in Sources */,
+				5EDF13AF178376D200E37127 /* PTHole.m in Sources */,
+				5EDF13B0178376D200E37127 /* PTPutt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +549,7 @@
 		};
 		5EDF1389178371E400E37127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F114D200137B44569F979B3D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PuttTracker/PuttTracker-Prefix.pch";
@@ -384,6 +561,7 @@
 		};
 		5EDF138A178371E400E37127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F114D200137B44569F979B3D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PuttTracker/PuttTracker-Prefix.pch";
@@ -427,6 +605,20 @@
 			};
 			name = Release;
 		};
+		5EDF1399178375C800E37127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5EDF139A178375C800E37127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,6 +638,7 @@
 				5EDF138A178371E400E37127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EDF138B178371E400E37127 /* Build configuration list for PBXNativeTarget "PuttTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +647,16 @@
 				5EDF138D178371E400E37127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EDF139B178375C800E37127 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EDF1399178375C800E37127 /* Debug */,
+				5EDF139A178375C800E37127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

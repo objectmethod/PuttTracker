@@ -1,11 +1,3 @@
-//
-//  PTAppDelegate.m
-//  PuttTracker
-//
-//  Created by Richard Guy on 7/2/13.
-//  Copyright (c) 2013 Richard Guy. All rights reserved.
-//
-
 #import "PTAppDelegate.h"
 
 @implementation PTAppDelegate
@@ -14,12 +6,18 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+- (void) setWindowBackgroundImage {
+	UIImage *image = [UIImage imageNamed:@"Default"];
+	UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+	[self.window addSubview:imageView];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    [self setWindowBackgroundImage];
+	self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 
