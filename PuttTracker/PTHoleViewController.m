@@ -4,12 +4,11 @@
 #import "UIViewController+CoreData.h"
 #import "NSObject+Alerts.h"
 #import "PTPutt.h"
+#import "PTPuttViewController.h"
 
 @interface PTHoleViewController () <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-
-- (IBAction)addPuttButtonClicked:(UIBarButtonItem *)sender;
 
 @end
 
@@ -21,16 +20,26 @@
 	[self updateUI];
 }
 
-#pragma mark - add putt
+#pragma mark - seque
 
-- (IBAction)addPuttButtonClicked:(UIBarButtonItem *)sender {
-	
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	if ([segue.destinationViewController isKindOfClass:[PTPuttViewController class]]) {
+		if ([segue.identifier isEqualToString:@"AddPuttSegueIdentifier"]) {
+			PTPuttViewController *puttViewController = segue.destinationViewController;
+			puttViewController.hole = self.hole;
+		} else if ([segue.identifier isEqualToString:@"EditPuttSegueIdentifier"]) {
+			PTPuttCell *puttCell = sender;
+			PTPuttViewController *puttViewController = segue.destinationViewController;
+			puttViewController.hole = self.hole;
+			puttViewController.putt = puttCell.putt;
+		}
+	}
 }
 
 #pragma mark - updateUI
 
 - (void) updateUI {
-	self.title = self.hole.name;
+	self.title = [NSString stringWithFormat:@"%@: Putts", self.hole.description];
 }
 
 #pragma mark - UITableViewDataSource

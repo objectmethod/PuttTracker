@@ -1,6 +1,7 @@
 #import "PTPuttViewController.h"
 #import "PTPutt.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIViewController+CoreData.h"
 
 @interface PTPuttViewController ()
 
@@ -12,18 +13,27 @@
 
 @implementation PTPuttViewController
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
 	[super viewDidLoad];
-	[self loadButtons];
+	[self addBorderToButtons];
 }
 
-- (void)loadButtons {
-	self.buttons = [[NSMutableArray alloc] init];
-	
-	for (UIButton *button in self.view.subviews) {
+- (void) addBorderToButtons {
+	for (UIButton *button in self.buttons) {
 		[self addBorderToButton:button];
-		[self.buttons addObject:button];
 	}
+}
+
+- (NSMutableArray *)buttons {
+	if (_buttons == nil) {
+		_buttons = [[NSMutableArray alloc] init];
+		
+		for (UIButton *button in self.view.subviews) {
+			[_buttons addObject:button];
+		}
+	}
+	
+	return _buttons;	
 }
 
 - (void) addBorderToButton:(UIButton*)button {
@@ -31,9 +41,35 @@
 	[[button layer] setBorderColor:[UIColor blackColor].CGColor];
 }
 
+- (void)setPutt:(PTPutt *)putt {
+	_putt = putt;
+	[self updateUI];
+}
+
+- (void) updateUI {
+	[self deselectAllButtons];
+	NSInteger tag = self.putt.resultValue;
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"tag == %d", tag];
+	UIButton *button = [[self.buttons filteredArrayUsingPredicate:predicate] lastObject];
+	[self setSelected:!button.selected forButton:button];
+}
+
 - (IBAction)buttonClicked:(UIButton *)sender {
-	[self deselectAllButtons];	
-	[self setSelected:!sender.selected forButton:sender];
+	PTPutt *putt = nil;
+	
+	if (self.putt == nil) {
+		putt = [PTPutt newEntity];
+	} else {
+		putt = self.putt;
+	}
+	
+	putt.resultValue = sender.tag;
+	putt.hole = self.hole;
+	[self save];
+	
+	self.putt = putt;
+	
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)deselectAllButtons {

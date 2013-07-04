@@ -168,6 +168,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="sPo-9j-eoe" kind="push" identifier="EditPuttSegueIdentifier" id="YeS-jY-qjw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -179,7 +182,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fb5-MH-FEB">
                             <connections>
                                 <action selector="addPuttButtonClicked:" destination="J2y-lg-ydE" id="nWB-im-xy2"/>
-                                <segue destination="sPo-9j-eoe" kind="push" id="7KL-ed-B22"/>
+                                <segue destination="sPo-9j-eoe" kind="push" identifier="AddPuttSegueIdentifier" id="7KL-ed-B22"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -473,4 +476,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="YeS-jY-qjw"/>
+    </inferredMetricsTieBreakers>
 </document>

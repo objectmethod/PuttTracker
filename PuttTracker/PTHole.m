@@ -8,7 +8,7 @@
 
 @implementation PTHole
 
-- (NSString *)name {
+- (NSString *)description {
 	return [NSString stringWithFormat:@"Hole %d", self.numberValue];
 }
 

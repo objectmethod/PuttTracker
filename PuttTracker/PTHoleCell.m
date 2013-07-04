@@ -9,7 +9,7 @@
 }
 
 - (void) updateUI {
-	self.textLabel.text = self.hole.name;
+	self.textLabel.text = self.hole.description;
 }
 
 @end

@@ -41,4 +41,8 @@
 	}
 }
 
+- (NSString *)description {
+	return [PTPutt descriptionForZone:self.resultValue];
+}
+
 @end
