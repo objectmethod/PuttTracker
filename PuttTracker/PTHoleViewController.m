@@ -65,6 +65,16 @@
 	puttCell.putt = putt;
 }
 
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+		PTPutt *putt = [self.fetchedResultsController objectAtIndexPath:indexPath];
+		[putt delete];
+    }
+}
+
+
 #pragma mark - fetchedResultsController
 
 - (NSFetchedResultsController *)fetchedResultsController {
