@@ -79,12 +79,6 @@
 
 #pragma mark - NSFetchedResultsControllerDelegate
 
-/*
- Assume self has a property 'tableView' -- as is the case for an instance of a UITableViewController
- subclass -- and a method configureCell:atIndexPath: which updates the contents of a given cell
- with information from a managed object at the given index path in the fetched results controller.
- */
-
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView beginUpdates];
 }

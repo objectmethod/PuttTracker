@@ -20,4 +20,10 @@
 	}
 }
 
++ (id)newEntity {
+	PTRound *round = [super newEntity];
+	[round initializeHoles];
+	return round;
+}
+
 @end
