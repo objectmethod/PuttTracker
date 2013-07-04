@@ -10,8 +10,8 @@
 }
 
 - (void) updateUI {
-	self.textLabel.text = self.round.date.stringFromDate;
-	self.detailTextLabel.text = self.round.location;
+	self.textLabel.text = self.round.location;
+	self.detailTextLabel.text = self.round.date.stringFromDate;
 }
 
 @end
