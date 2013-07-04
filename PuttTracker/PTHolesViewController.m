@@ -1,6 +1,7 @@
 #import "PTHolesViewController.h"
 #import "PTRound.h"
 #import "PTHoleViewController.h"
+#import "UIView+Resize.h"
 
 @interface PTHolesViewController ()
 
@@ -48,9 +49,7 @@
 }
 
 - (void) initialize {
-	NSLog(@"self.scrollView.frame: %@", NSStringFromCGRect(self.scrollView.frame));
 	self.round = [PTRound insertInManagedObjectContext:self.managedObjectContext];
-	NSLog(@"self.scrollView.frame: %@", NSStringFromCGRect(self.scrollView.frame));
 }
 
 #pragma mark - managedObjectContext
@@ -64,22 +63,37 @@
 #pragma mark - load view
 
 - (void)viewDidLoad {
-	NSLog(@"self.view.frame: %@", NSStringFromCGRect(self.view.frame));
-	NSLog(@"self.scrollView.frame: %@", NSStringFromCGRect(self.scrollView.frame));
 	[super viewDidLoad];
 	[self addHoles];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	[self updateScrollViewContentSize];
 }
 
 - (void) addHoles {
 	self.holeViewControllers = [[NSMutableArray alloc] init];
 	
+	NSInteger holeNumber = 0;
+		
 	for (PTHole *hole in self.round.holes) {
 		PTHoleViewController *holeViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PTHoleViewController class])];
 		[self.holeViewControllers addObject:holeViewController];
-		holeViewController.view.frame = self.scrollView.bounds;
 		[self.scrollView addSubview:holeViewController.view];
-		NSLog(@"holeViewController.view.frame: %@", NSStringFromCGRect(holeViewController.view.frame));
+		
+		holeViewController.view.frame = self.scrollView.bounds;
+		float x = self.scrollView.frame.size.width * holeNumber;
+		holeViewController.view.x = x;
+		holeNumber++;
 	}
+}
+
+- (void) updateScrollViewContentSize {
+	NSInteger countOfHoles = self.round.holes.count;
+	float width = self.scrollView.frame.size.width * countOfHoles;
+	float height = self.scrollView.frame.size.height;
+	self.scrollView.contentSize = CGSizeMake(width, height);
 }
 
 @end

@@ -54,6 +54,8 @@
 		5E5178071784A0D00040D793 /* short-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5177E71784A0D00040D793 /* short-568h@2x.png */; };
 		5E5178081784A0D00040D793 /* short.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5177E81784A0D00040D793 /* short.png */; };
 		5E5178091784A0D00040D793 /* short@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5177E91784A0D00040D793 /* short@2x.png */; };
+		5E51780C1784C4E70040D793 /* UIView+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51780B1784C4E70040D793 /* UIView+Resize.m */; };
+		5E51780D1784C4E70040D793 /* UIView+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51780B1784C4E70040D793 /* UIView+Resize.m */; };
 		5EDF1354178371E400E37127 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1353178371E400E37127 /* UIKit.framework */; };
 		5EDF1356178371E400E37127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1355178371E400E37127 /* Foundation.framework */; };
 		5EDF1358178371E400E37127 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1357178371E400E37127 /* CoreGraphics.framework */; };
@@ -127,6 +129,8 @@
 		5E5177E71784A0D00040D793 /* short-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "short-568h@2x.png"; sourceTree = "<group>"; };
 		5E5177E81784A0D00040D793 /* short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = short.png; sourceTree = "<group>"; };
 		5E5177E91784A0D00040D793 /* short@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "short@2x.png"; sourceTree = "<group>"; };
+		5E51780A1784C4E70040D793 /* UIView+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Resize.h"; sourceTree = "<group>"; };
+		5E51780B1784C4E70040D793 /* UIView+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Resize.m"; sourceTree = "<group>"; };
 		5EDF1350178371E400E37127 /* PuttTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuttTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDF1353178371E400E37127 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EDF1355178371E400E37127 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -272,6 +276,8 @@
 		5EDF135B178371E400E37127 /* PuttTracker */ = {
 			isa = PBXGroup;
 			children = (
+				5E51780A1784C4E70040D793 /* UIView+Resize.h */,
+				5E51780B1784C4E70040D793 /* UIView+Resize.m */,
 				5E5176AF178476E50040D793 /* images */,
 				5EDF13A5178376D200E37127 /* _PTHole.h */,
 				5EDF13A6178376D200E37127 /* _PTHole.m */,
@@ -530,6 +536,7 @@
 				5EDF13AE178376D200E37127 /* _PTPutt.m in Sources */,
 				5EDF13AF178376D200E37127 /* PTHole.m in Sources */,
 				5EDF13B0178376D200E37127 /* PTPutt.m in Sources */,
+				5E51780C1784C4E70040D793 /* UIView+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EDF1385178371E400E37127 /* PuttTrackerTests.m in Sources */,
+				5E51780D1784C4E70040D793 /* UIView+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

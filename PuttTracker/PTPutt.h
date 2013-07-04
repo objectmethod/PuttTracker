@@ -1,5 +1,7 @@
 #import "_PTPutt.h"
 
 @interface PTPutt : _PTPutt {}
-// Custom logic goes here.
+
++ (NSString*) descriptionForZone:(NSInteger)zone;
+
 @end
