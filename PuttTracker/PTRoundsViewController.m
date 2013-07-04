@@ -1,10 +1,9 @@
-
 #import "PTRoundsViewController.h"
 #import "PTRoundCell.h"
 #import "PTRound.h"
-#import "NSDate+Formatting.h"
 #import "UIViewController+CoreData.h"
 #import "NSObject+Alerts.h"
+#import "PTRoundViewController.h"
 
 @interface PTRoundsViewController () <NSFetchedResultsControllerDelegate>
 
@@ -27,6 +26,17 @@
 	}
 }
 
+#pragma mark - seque
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	if ([segue.destinationViewController isKindOfClass:[PTRoundViewController class]]) {
+		PTRoundCell *roundCell = sender;
+		
+		PTRoundViewController *roundViewController = segue.destinationViewController;
+		roundViewController.round = roundCell.round;
+	}
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -46,9 +56,8 @@
 
 - (void) configureCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath {
 	PTRound *round = [self.fetchedResultsController objectAtIndexPath:indexPath];
-	
-	cell.textLabel.text = round.date.stringFromDate;
-	cell.detailTextLabel.text = round.location;
+	PTRoundCell *roundCell = (PTRoundCell*)cell;
+	roundCell.round = round;
 }
 
 #pragma mark - fetchedResultsController
