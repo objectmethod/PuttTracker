@@ -6,6 +6,8 @@
 
 extern const struct PTPuttAttributes {
 	__unsafe_unretained NSString *id;
+	__unsafe_unretained NSString *number;
+	__unsafe_unretained NSString *result;
 } PTPuttAttributes;
 
 extern const struct PTPuttRelationships {
@@ -16,6 +18,8 @@ extern const struct PTPuttFetchedProperties {
 } PTPuttFetchedProperties;
 
 @class PTHole;
+
+
 
 
 
@@ -42,6 +46,34 @@ extern const struct PTPuttFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSNumber* number;
+
+
+
+@property int16_t numberValue;
+- (int16_t)numberValue;
+- (void)setNumberValue:(int16_t)value_;
+
+//- (BOOL)validateNumber:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSNumber* result;
+
+
+
+@property int16_t resultValue;
+- (int16_t)resultValue;
+- (void)setResultValue:(int16_t)value_;
+
+//- (BOOL)validateResult:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) PTHole *hole;
 
 //- (BOOL)validateHole:(id*)value_ error:(NSError**)error_;
@@ -61,6 +93,24 @@ extern const struct PTPuttFetchedProperties {
 
 - (NSString*)primitiveId;
 - (void)setPrimitiveId:(NSString*)value;
+
+
+
+
+- (NSNumber*)primitiveNumber;
+- (void)setPrimitiveNumber:(NSNumber*)value;
+
+- (int16_t)primitiveNumberValue;
+- (void)setPrimitiveNumberValue:(int16_t)value_;
+
+
+
+
+- (NSNumber*)primitiveResult;
+- (void)setPrimitiveResult:(NSNumber*)value;
+
+- (int16_t)primitiveResultValue;
+- (void)setPrimitiveResultValue:(int16_t)value_;
 
 
 

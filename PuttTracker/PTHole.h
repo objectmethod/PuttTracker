@@ -1,5 +1,7 @@
 #import "_PTHole.h"
 
 @interface PTHole : _PTHole {}
-// Custom logic goes here.
+
+@property (readonly) NSString *name;
+
 @end

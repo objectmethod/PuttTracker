@@ -66,6 +66,8 @@
 		5E8D30571785C0A800CB41B3 /* NSManagedObject+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30561785C0A800CB41B3 /* NSManagedObject+CoreData.m */; };
 		5E8D305A1785C23000CB41B3 /* NSObject+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30591785C23000CB41B3 /* NSObject+CoreData.m */; };
 		5E8D305D1785C2A300CB41B3 /* NSObject+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D305C1785C2A300CB41B3 /* NSObject+Alerts.m */; };
+		5E8D30601785F64600CB41B3 /* PTHoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D305F1785F64600CB41B3 /* PTHoleViewController.m */; };
+		5E8D30631785F73100CB41B3 /* PTPuttCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30621785F73100CB41B3 /* PTPuttCell.m */; };
 		5EDF1354178371E400E37127 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1353178371E400E37127 /* UIKit.framework */; };
 		5EDF1356178371E400E37127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1355178371E400E37127 /* Foundation.framework */; };
 		5EDF1358178371E400E37127 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1357178371E400E37127 /* CoreGraphics.framework */; };
@@ -161,6 +163,10 @@
 		5E8D30591785C23000CB41B3 /* NSObject+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CoreData.m"; sourceTree = "<group>"; };
 		5E8D305B1785C2A300CB41B3 /* NSObject+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Alerts.h"; sourceTree = "<group>"; };
 		5E8D305C1785C2A300CB41B3 /* NSObject+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Alerts.m"; sourceTree = "<group>"; };
+		5E8D305E1785F64600CB41B3 /* PTHoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHoleViewController.h; sourceTree = "<group>"; };
+		5E8D305F1785F64600CB41B3 /* PTHoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHoleViewController.m; sourceTree = "<group>"; };
+		5E8D30611785F73000CB41B3 /* PTPuttCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPuttCell.h; sourceTree = "<group>"; };
+		5E8D30621785F73100CB41B3 /* PTPuttCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPuttCell.m; sourceTree = "<group>"; };
 		5EDF1350178371E400E37127 /* PuttTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuttTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDF1353178371E400E37127 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EDF1355178371E400E37127 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -350,6 +356,10 @@
 				5E8D30591785C23000CB41B3 /* NSObject+CoreData.m */,
 				5E8D305B1785C2A300CB41B3 /* NSObject+Alerts.h */,
 				5E8D305C1785C2A300CB41B3 /* NSObject+Alerts.m */,
+				5E8D305E1785F64600CB41B3 /* PTHoleViewController.h */,
+				5E8D305F1785F64600CB41B3 /* PTHoleViewController.m */,
+				5E8D30611785F73000CB41B3 /* PTPuttCell.h */,
+				5E8D30621785F73100CB41B3 /* PTPuttCell.m */,
 			);
 			path = PuttTracker;
 			sourceTree = "<group>";
@@ -597,6 +607,8 @@
 				5E8D30571785C0A800CB41B3 /* NSManagedObject+CoreData.m in Sources */,
 				5E8D305A1785C23000CB41B3 /* NSObject+CoreData.m in Sources */,
 				5E8D305D1785C2A300CB41B3 /* NSObject+Alerts.m in Sources */,
+				5E8D30601785F64600CB41B3 /* PTHoleViewController.m in Sources */,
+				5E8D30631785F73100CB41B3 /* PTPuttCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
     </entity>
     <entity name="PTPutt" representedClassName="PTPutt" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="result" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="hole" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PTHole" inverseName="putts" inverseEntity="PTHole" syncable="YES"/>
     </entity>
     <entity name="PTRound" representedClassName="PTRound" syncable="YES">
@@ -18,7 +20,7 @@
     </entity>
     <elements>
         <element name="PTHole" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="PTPutt" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="PTPutt" positionX="160" positionY="192" width="128" height="105"/>
         <element name="PTRound" positionX="160" positionY="192" width="128" height="105"/>
     </elements>
 </model>

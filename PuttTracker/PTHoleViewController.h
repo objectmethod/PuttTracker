@@ -1,6 +1,6 @@
 @class PTHole;
 
-@interface PTHoleCell : UITableViewCell
+@interface PTHoleViewController : UITableViewController
 
 @property (strong, nonatomic) PTHole *hole;
 

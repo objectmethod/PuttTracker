@@ -109,7 +109,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PTHoleCell" textLabel="Sa7-ew-jIW" style="IBUITableViewCellStyleDefault" id="hMG-a4-D8h">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="PTHoleCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PTHoleCell" textLabel="Sa7-ew-jIW" style="IBUITableViewCellStyleDefault" id="hMG-a4-D8h" customClass="PTHoleCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -127,7 +127,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="Gvf-HC-ssu" kind="push" id="Vj3-Rm-fD6"/>
+                                    <segue destination="J2y-lg-ydE" kind="push" id="WFA-0L-Nkq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -142,37 +142,56 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="554" y="0.0"/>
         </scene>
-        <!--Holes View Controller-->
-        <scene sceneID="JRT-gg-DpK">
+        <!--Hole View Controller - Hole-->
+        <scene sceneID="1Ip-Gz-JWP">
             <objects>
-                <viewController storyboardIdentifier="PTHolesViewController" id="Gvf-HC-ssu" customClass="PTHolesViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b5P-dw-Z0J">
+                <tableViewController storyboardIdentifier="PTHoleViewController" id="J2y-lg-ydE" customClass="PTHoleViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="u0U-7z-ob8">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" id="GdW-y4-FCe">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="K38-G1-MXX">
-                        <barButtonItem key="leftBarButtonItem" image="menu-icon.png" id="P61-FT-MXI"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="PTHoleCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PTPuttCell" textLabel="atu-AS-2e5" style="IBUITableViewCellStyleDefault" id="Xh7-l1-qAM" customClass="PTPuttCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="atu-AS-2e5">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="J2y-lg-ydE" id="YKp-6L-DnF"/>
+                            <outlet property="delegate" destination="J2y-lg-ydE" id="o8F-jj-sUk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Hole" id="CW2-nU-wb0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fb5-MH-FEB">
+                            <connections>
+                                <action selector="addPuttButtonClicked:" destination="J2y-lg-ydE" id="nWB-im-xy2"/>
+                                <segue destination="sPo-9j-eoe" kind="push" id="7KL-ed-B22"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="scrollView" destination="GdW-y4-FCe" id="8Zn-h5-a1Z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D5i-Vs-AK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WgA-9c-z6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="0.0"/>
+            <point key="canvasLocation" x="986" y="0.0"/>
         </scene>
         <!--Putt View Controller-->
         <scene sceneID="S1S-iw-Na6">
             <objects>
-                <viewController storyboardIdentifier="PTHoleViewController" id="sPo-9j-eoe" customClass="PTPuttViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PTPuttViewController" id="sPo-9j-eoe" customClass="PTPuttViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="krP-mW-WrA">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,6 +334,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="pwZ-lH-aW0"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
@@ -403,18 +423,23 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="long.png" width="107" height="138"/>
         <image name="long_left.png" width="106" height="138"/>
         <image name="long_right.png" width="107" height="139"/>
-        <image name="menu-icon.png" width="22" height="17"/>
         <image name="right.png" width="107" height="139"/>
         <image name="short.png" width="107" height="139"/>
         <image name="short_left.png" width="106" height="139"/>
         <image name="short_right.png" width="107" height="138"/>
     </resources>
     <classes>
-        <class className="PTHolesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTHolesViewController.h"/>
+        <class className="PTHoleCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTHoleCell.h"/>
+        </class>
+        <class className="PTHoleViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTHoleViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="action" name="addPuttButtonClicked:" candidateClass="UIBarButtonItem"/>
             </relationships>
+        </class>
+        <class className="PTPuttCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTPuttCell.h"/>
         </class>
         <class className="PTPuttViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PTPuttViewController.h"/>

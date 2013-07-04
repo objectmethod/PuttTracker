@@ -5,6 +5,8 @@
 
 const struct PTPuttAttributes PTPuttAttributes = {
 	.id = @"id",
+	.number = @"number",
+	.result = @"result",
 };
 
 const struct PTPuttRelationships PTPuttRelationships = {
@@ -40,6 +42,16 @@ const struct PTPuttFetchedProperties PTPuttFetchedProperties = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
+	if ([key isEqualToString:@"numberValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"number"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+	if ([key isEqualToString:@"resultValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"result"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
 
 	return keyPaths;
 }
@@ -49,6 +61,58 @@ const struct PTPuttFetchedProperties PTPuttFetchedProperties = {
 
 @dynamic id;
 
+
+
+
+
+
+@dynamic number;
+
+
+
+- (int16_t)numberValue {
+	NSNumber *result = [self number];
+	return [result shortValue];
+}
+
+- (void)setNumberValue:(int16_t)value_ {
+	[self setNumber:[NSNumber numberWithShort:value_]];
+}
+
+- (int16_t)primitiveNumberValue {
+	NSNumber *result = [self primitiveNumber];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveNumberValue:(int16_t)value_ {
+	[self setPrimitiveNumber:[NSNumber numberWithShort:value_]];
+}
+
+
+
+
+
+@dynamic result;
+
+
+
+- (int16_t)resultValue {
+	NSNumber *result = [self result];
+	return [result shortValue];
+}
+
+- (void)setResultValue:(int16_t)value_ {
+	[self setResult:[NSNumber numberWithShort:value_]];
+}
+
+- (int16_t)primitiveResultValue {
+	NSNumber *result = [self primitiveResult];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveResultValue:(int16_t)value_ {
+	[self setPrimitiveResult:[NSNumber numberWithShort:value_]];
+}
 
 
 

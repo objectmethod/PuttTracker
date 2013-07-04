@@ -3,13 +3,13 @@
 
 @interface PTHole ()
 
-// Private interface goes here.
-
 @end
 
 
 @implementation PTHole
 
-// Custom logic goes here.
+- (NSString *)name {
+	return [NSString stringWithFormat:@"Hole %d", self.numberValue];
+}
 
 @end

@@ -1,40 +1,36 @@
-#import "PTRoundsViewController.h"
-#import "PTRoundCell.h"
-#import "PTRound.h"
+#import "PTHoleViewController.h"
+#import "PTHole.h"
+#import "PTPuttCell.h"
 #import "UIViewController+CoreData.h"
 #import "NSObject+Alerts.h"
-#import "PTRoundViewController.h"
+#import "PTPutt.h"
 
-@interface PTRoundsViewController () <NSFetchedResultsControllerDelegate>
+@interface PTHoleViewController () <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
+- (IBAction)addPuttButtonClicked:(UIBarButtonItem *)sender;
+
 @end
 
-@implementation PTRoundsViewController
+@implementation PTHoleViewController
 
-- (void) viewDidLoad {
-	[super viewDidLoad];
+- (void)setHole:(PTHole *)hole {
+	_hole = hole;
 	[self performFetch];
+	[self updateUI];
 }
 
-- (void) performFetch {
-	NSError *error;
-	[self.fetchedResultsController performFetch:&error];
-	if (error) {
-		[self showAlertForError:error];
-	}
+#pragma mark - add putt
+
+- (IBAction)addPuttButtonClicked:(UIBarButtonItem *)sender {
+	
 }
 
-#pragma mark - seque
+#pragma mark - updateUI
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-	if ([segue.destinationViewController isKindOfClass:[PTRoundViewController class]]) {
-		PTRoundCell *roundCell = sender;
-		
-		PTRoundViewController *roundViewController = segue.destinationViewController;
-		roundViewController.round = roundCell.round;
-	}
+- (void) updateUI {
+	self.title = self.hole.name;
 }
 
 #pragma mark - UITableViewDataSource
@@ -49,32 +45,43 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	PTRoundCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([PTRoundCell class])];
+	PTPuttCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([PTPuttCell class])];
 	[self configureCell:cell atIndexPath:indexPath];
 	return cell;
 }
 
 - (void) configureCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath {
-	PTRound *round = [self.fetchedResultsController objectAtIndexPath:indexPath];
-	PTRoundCell *roundCell = (PTRoundCell*)cell;
-	roundCell.round = round;
+	PTPutt *putt = [self.fetchedResultsController objectAtIndexPath:indexPath];
+	PTPuttCell *puttCell = (PTPuttCell*)cell;
+	puttCell.putt = putt;
 }
 
 #pragma mark - fetchedResultsController
 
 - (NSFetchedResultsController *)fetchedResultsController {
 	if (_fetchedResultsController == nil) {
-		NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass([PTRound class])];
+		NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass([PTPutt class])];
 		
-		NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];
+		NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"number" ascending:YES];
 		NSArray *sortDescriptors = @[sortDescriptor];
 		request.sortDescriptors = sortDescriptors;
+		
+		NSPredicate *predicate = [NSPredicate predicateWithFormat:@"hole == %@", self.hole];
+		request.predicate = predicate;
 		
 		_fetchedResultsController = [self fetchedResultsControllerWithRequest:request];
 		_fetchedResultsController.delegate = self;
 	}
 	
 	return _fetchedResultsController;
+}
+
+- (void) performFetch {
+	NSError *error;
+	[self.fetchedResultsController performFetch:&error];
+	if (error) {
+		[self showAlertForError:error];
+	}
 }
 
 #pragma mark - NSFetchedResultsControllerDelegate
