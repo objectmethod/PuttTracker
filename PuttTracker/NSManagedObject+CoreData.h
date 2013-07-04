@@ -3,4 +3,6 @@
 + (NSArray*) allObjects;
 + (id) newEntity;
 
+- (void) delete;
+
 @end

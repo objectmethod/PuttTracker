@@ -23,4 +23,9 @@
 	return [NSEntityDescription insertNewObjectForEntityForName:entityName inManagedObjectContext:context];
 }
 
+- (void)delete {
+	[self.managedObjectContext deleteObject:self];
+	[self.appDelegate saveContext];
+}
+
 @end
