@@ -1,13 +1,12 @@
 #import "PTHolesViewController.h"
 #import "PTRound.h"
-#import "PTHoleViewController.h"
+#import "PTPuttViewController.h"
 #import "UIView+Resize.h"
+#import "UIViewController+CoreData.h"
 
 @interface PTHolesViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-
-@property (readonly) NSManagedObjectContext *managedObjectContext;
 
 @property (strong, nonatomic) PTRound *round;
 @property (strong, nonatomic) NSMutableArray *holeViewControllers;
@@ -49,15 +48,7 @@
 }
 
 - (void) initialize {
-	self.round = [PTRound insertInManagedObjectContext:self.managedObjectContext];
-}
-
-#pragma mark - managedObjectContext
-
-- (NSManagedObjectContext *)managedObjectContext {
-	UIApplication *application = [UIApplication sharedApplication];
-	PTAppDelegate *appDelegate = application.delegate;
-	return appDelegate.managedObjectContext;
+	self.round = [PTRound newEntity];
 }
 
 #pragma mark - load view
@@ -78,7 +69,7 @@
 	NSInteger holeNumber = 0;
 		
 	for (PTHole *hole in self.round.holes) {
-		PTHoleViewController *holeViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PTHoleViewController class])];
+		PTPuttViewController *holeViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PTPuttViewController class])];
 		[self.holeViewControllers addObject:holeViewController];
 		[self.scrollView addSubview:holeViewController.view];
 		

@@ -4,7 +4,9 @@
 #import "_PTRound.h"
 
 const struct PTRoundAttributes PTRoundAttributes = {
+	.date = @"date",
 	.id = @"id",
+	.location = @"location",
 };
 
 const struct PTRoundRelationships PTRoundRelationships = {
@@ -47,7 +49,21 @@ const struct PTRoundFetchedProperties PTRoundFetchedProperties = {
 
 
 
+@dynamic date;
+
+
+
+
+
+
 @dynamic id;
+
+
+
+
+
+
+@dynamic location;
 
 
 

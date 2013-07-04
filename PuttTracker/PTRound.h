@@ -1,5 +1,8 @@
 #import "_PTRound.h"
+#import "NSManagedObject+CoreData.h"
 
 @interface PTRound : _PTRound {}
-// Custom logic goes here.
+
+- (void) initializeHoles;
+
 @end

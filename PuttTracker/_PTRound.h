@@ -5,7 +5,9 @@
 
 
 extern const struct PTRoundAttributes {
+	__unsafe_unretained NSString *date;
 	__unsafe_unretained NSString *id;
+	__unsafe_unretained NSString *location;
 } PTRoundAttributes;
 
 extern const struct PTRoundRelationships {
@@ -16,6 +18,8 @@ extern const struct PTRoundFetchedProperties {
 } PTRoundFetchedProperties;
 
 @class PTHole;
+
+
 
 
 
@@ -32,11 +36,31 @@ extern const struct PTRoundFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSDate* date;
+
+
+
+//- (BOOL)validateDate:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSString* id;
 
 
 
 //- (BOOL)validateId:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSString* location;
+
+
+
+//- (BOOL)validateLocation:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -64,8 +88,20 @@ extern const struct PTRoundFetchedProperties {
 @interface _PTRound (CoreDataGeneratedPrimitiveAccessors)
 
 
+- (NSDate*)primitiveDate;
+- (void)setPrimitiveDate:(NSDate*)value;
+
+
+
+
 - (NSString*)primitiveId;
 - (void)setPrimitiveId:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveLocation;
+- (void)setPrimitiveLocation:(NSString*)value;
 
 
 

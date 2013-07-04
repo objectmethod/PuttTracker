@@ -1,8 +1,8 @@
-#import "PTHoleViewController.h"
+#import "PTPuttViewController.h"
 #import "PTPutt.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface PTHoleViewController ()
+@interface PTPuttViewController ()
 
 @property (strong, nonatomic) NSMutableArray *buttons;
 
@@ -10,7 +10,7 @@
 
 @end
 
-@implementation PTHoleViewController
+@implementation PTPuttViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];

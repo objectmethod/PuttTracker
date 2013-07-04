@@ -11,12 +11,14 @@
         <relationship name="hole" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PTHole" inverseName="putts" inverseEntity="PTHole" syncable="YES"/>
     </entity>
     <entity name="PTRound" representedClassName="PTRound" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="holes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PTHole" inverseName="round" inverseEntity="PTHole" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PTRound" positionX="160" positionY="192" width="128" height="75"/>
         <element name="PTHole" positionX="160" positionY="192" width="128" height="105"/>
         <element name="PTPutt" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="PTRound" positionX="160" positionY="192" width="128" height="105"/>
     </elements>
 </model>

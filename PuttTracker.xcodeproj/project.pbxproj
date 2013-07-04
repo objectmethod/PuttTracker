@@ -56,6 +56,16 @@
 		5E5178091784A0D00040D793 /* short@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5177E91784A0D00040D793 /* short@2x.png */; };
 		5E51780C1784C4E70040D793 /* UIView+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51780B1784C4E70040D793 /* UIView+Resize.m */; };
 		5E51780D1784C4E70040D793 /* UIView+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51780B1784C4E70040D793 /* UIView+Resize.m */; };
+		5E8D3042178500FC00CB41B3 /* PTRoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D3041178500FC00CB41B3 /* PTRoundsViewController.m */; };
+		5E8D30451785013700CB41B3 /* PTRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30441785013700CB41B3 /* PTRoundViewController.m */; };
+		5E8D30481785025E00CB41B3 /* PTRoundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30471785025E00CB41B3 /* PTRoundCell.m */; };
+		5E8D304B1785031900CB41B3 /* NSDate+Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D304A1785031900CB41B3 /* NSDate+Formatting.m */; };
+		5E8D304E1785047D00CB41B3 /* PTHoleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D304D1785047D00CB41B3 /* PTHoleCell.m */; };
+		5E8D30511785050C00CB41B3 /* PTRoundDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30501785050C00CB41B3 /* PTRoundDetailsViewController.m */; };
+		5E8D30541785066B00CB41B3 /* UIViewController+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30531785066B00CB41B3 /* UIViewController+CoreData.m */; };
+		5E8D30571785C0A800CB41B3 /* NSManagedObject+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30561785C0A800CB41B3 /* NSManagedObject+CoreData.m */; };
+		5E8D305A1785C23000CB41B3 /* NSObject+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30591785C23000CB41B3 /* NSObject+CoreData.m */; };
+		5E8D305D1785C2A300CB41B3 /* NSObject+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D305C1785C2A300CB41B3 /* NSObject+Alerts.m */; };
 		5EDF1354178371E400E37127 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1353178371E400E37127 /* UIKit.framework */; };
 		5EDF1356178371E400E37127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1355178371E400E37127 /* Foundation.framework */; };
 		5EDF1358178371E400E37127 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1357178371E400E37127 /* CoreGraphics.framework */; };
@@ -75,7 +85,7 @@
 		5EDF1385178371E400E37127 /* PuttTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1384178371E400E37127 /* PuttTrackerTests.m */; };
 		5EDF138F1783726800E37127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDF138E1783726800E37127 /* Main.storyboard */; };
 		5EDF1392178372AF00E37127 /* PTHolesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1391178372AF00E37127 /* PTHolesViewController.m */; };
-		5EDF1395178372BD00E37127 /* PTHoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1394178372BD00E37127 /* PTHoleViewController.m */; };
+		5EDF1395178372BD00E37127 /* PTPuttViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1394178372BD00E37127 /* PTPuttViewController.m */; };
 		5EDF13A11783764B00E37127 /* _PTRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF139E1783764B00E37127 /* _PTRound.m */; };
 		5EDF13A21783764B00E37127 /* PTRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF13A01783764B00E37127 /* PTRound.m */; };
 		5EDF13A41783766600E37127 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5EDF13A31783766600E37127 /* Podfile */; };
@@ -131,6 +141,26 @@
 		5E5177E91784A0D00040D793 /* short@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "short@2x.png"; sourceTree = "<group>"; };
 		5E51780A1784C4E70040D793 /* UIView+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Resize.h"; sourceTree = "<group>"; };
 		5E51780B1784C4E70040D793 /* UIView+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Resize.m"; sourceTree = "<group>"; };
+		5E8D3040178500FC00CB41B3 /* PTRoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRoundsViewController.h; sourceTree = "<group>"; };
+		5E8D3041178500FC00CB41B3 /* PTRoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRoundsViewController.m; sourceTree = "<group>"; };
+		5E8D30431785013600CB41B3 /* PTRoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRoundViewController.h; sourceTree = "<group>"; };
+		5E8D30441785013700CB41B3 /* PTRoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRoundViewController.m; sourceTree = "<group>"; };
+		5E8D30461785025E00CB41B3 /* PTRoundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRoundCell.h; sourceTree = "<group>"; };
+		5E8D30471785025E00CB41B3 /* PTRoundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRoundCell.m; sourceTree = "<group>"; };
+		5E8D30491785031900CB41B3 /* NSDate+Formatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatting.h"; sourceTree = "<group>"; };
+		5E8D304A1785031900CB41B3 /* NSDate+Formatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatting.m"; sourceTree = "<group>"; };
+		5E8D304C1785047D00CB41B3 /* PTHoleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHoleCell.h; sourceTree = "<group>"; };
+		5E8D304D1785047D00CB41B3 /* PTHoleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHoleCell.m; sourceTree = "<group>"; };
+		5E8D304F1785050C00CB41B3 /* PTRoundDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRoundDetailsViewController.h; sourceTree = "<group>"; };
+		5E8D30501785050C00CB41B3 /* PTRoundDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRoundDetailsViewController.m; sourceTree = "<group>"; };
+		5E8D30521785066B00CB41B3 /* UIViewController+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CoreData.h"; sourceTree = "<group>"; };
+		5E8D30531785066B00CB41B3 /* UIViewController+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CoreData.m"; sourceTree = "<group>"; };
+		5E8D30551785C0A800CB41B3 /* NSManagedObject+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CoreData.h"; sourceTree = "<group>"; };
+		5E8D30561785C0A800CB41B3 /* NSManagedObject+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CoreData.m"; sourceTree = "<group>"; };
+		5E8D30581785C23000CB41B3 /* NSObject+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CoreData.h"; sourceTree = "<group>"; };
+		5E8D30591785C23000CB41B3 /* NSObject+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CoreData.m"; sourceTree = "<group>"; };
+		5E8D305B1785C2A300CB41B3 /* NSObject+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Alerts.h"; sourceTree = "<group>"; };
+		5E8D305C1785C2A300CB41B3 /* NSObject+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Alerts.m"; sourceTree = "<group>"; };
 		5EDF1350178371E400E37127 /* PuttTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuttTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDF1353178371E400E37127 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EDF1355178371E400E37127 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -155,8 +185,8 @@
 		5EDF138E1783726800E37127 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5EDF1390178372AF00E37127 /* PTHolesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHolesViewController.h; sourceTree = "<group>"; };
 		5EDF1391178372AF00E37127 /* PTHolesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHolesViewController.m; sourceTree = "<group>"; };
-		5EDF1393178372BD00E37127 /* PTHoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHoleViewController.h; sourceTree = "<group>"; };
-		5EDF1394178372BD00E37127 /* PTHoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHoleViewController.m; sourceTree = "<group>"; };
+		5EDF1393178372BD00E37127 /* PTPuttViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPuttViewController.h; sourceTree = "<group>"; };
+		5EDF1394178372BD00E37127 /* PTPuttViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPuttViewController.m; sourceTree = "<group>"; };
 		5EDF139D1783764B00E37127 /* _PTRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PTRound.h; sourceTree = "<group>"; };
 		5EDF139E1783764B00E37127 /* _PTRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PTRound.m; sourceTree = "<group>"; };
 		5EDF139F1783764B00E37127 /* PTRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRound.h; sourceTree = "<group>"; };
@@ -298,8 +328,28 @@
 				5EDF138E1783726800E37127 /* Main.storyboard */,
 				5EDF1390178372AF00E37127 /* PTHolesViewController.h */,
 				5EDF1391178372AF00E37127 /* PTHolesViewController.m */,
-				5EDF1393178372BD00E37127 /* PTHoleViewController.h */,
-				5EDF1394178372BD00E37127 /* PTHoleViewController.m */,
+				5EDF1393178372BD00E37127 /* PTPuttViewController.h */,
+				5EDF1394178372BD00E37127 /* PTPuttViewController.m */,
+				5E8D3040178500FC00CB41B3 /* PTRoundsViewController.h */,
+				5E8D3041178500FC00CB41B3 /* PTRoundsViewController.m */,
+				5E8D30431785013600CB41B3 /* PTRoundViewController.h */,
+				5E8D30441785013700CB41B3 /* PTRoundViewController.m */,
+				5E8D30461785025E00CB41B3 /* PTRoundCell.h */,
+				5E8D30471785025E00CB41B3 /* PTRoundCell.m */,
+				5E8D30491785031900CB41B3 /* NSDate+Formatting.h */,
+				5E8D304A1785031900CB41B3 /* NSDate+Formatting.m */,
+				5E8D304C1785047D00CB41B3 /* PTHoleCell.h */,
+				5E8D304D1785047D00CB41B3 /* PTHoleCell.m */,
+				5E8D304F1785050C00CB41B3 /* PTRoundDetailsViewController.h */,
+				5E8D30501785050C00CB41B3 /* PTRoundDetailsViewController.m */,
+				5E8D30521785066B00CB41B3 /* UIViewController+CoreData.h */,
+				5E8D30531785066B00CB41B3 /* UIViewController+CoreData.m */,
+				5E8D30551785C0A800CB41B3 /* NSManagedObject+CoreData.h */,
+				5E8D30561785C0A800CB41B3 /* NSManagedObject+CoreData.m */,
+				5E8D30581785C23000CB41B3 /* NSObject+CoreData.h */,
+				5E8D30591785C23000CB41B3 /* NSObject+CoreData.m */,
+				5E8D305B1785C2A300CB41B3 /* NSObject+Alerts.h */,
+				5E8D305C1785C2A300CB41B3 /* NSObject+Alerts.m */,
 			);
 			path = PuttTracker;
 			sourceTree = "<group>";
@@ -529,7 +579,7 @@
 				5EDF1366178371E400E37127 /* PTAppDelegate.m in Sources */,
 				5EDF136F178371E400E37127 /* PuttTracker.xcdatamodeld in Sources */,
 				5EDF1392178372AF00E37127 /* PTHolesViewController.m in Sources */,
-				5EDF1395178372BD00E37127 /* PTHoleViewController.m in Sources */,
+				5EDF1395178372BD00E37127 /* PTPuttViewController.m in Sources */,
 				5EDF13A11783764B00E37127 /* _PTRound.m in Sources */,
 				5EDF13A21783764B00E37127 /* PTRound.m in Sources */,
 				5EDF13AD178376D200E37127 /* _PTHole.m in Sources */,
@@ -537,6 +587,16 @@
 				5EDF13AF178376D200E37127 /* PTHole.m in Sources */,
 				5EDF13B0178376D200E37127 /* PTPutt.m in Sources */,
 				5E51780C1784C4E70040D793 /* UIView+Resize.m in Sources */,
+				5E8D3042178500FC00CB41B3 /* PTRoundsViewController.m in Sources */,
+				5E8D30451785013700CB41B3 /* PTRoundViewController.m in Sources */,
+				5E8D30481785025E00CB41B3 /* PTRoundCell.m in Sources */,
+				5E8D304B1785031900CB41B3 /* NSDate+Formatting.m in Sources */,
+				5E8D304E1785047D00CB41B3 /* PTHoleCell.m in Sources */,
+				5E8D30511785050C00CB41B3 /* PTRoundDetailsViewController.m in Sources */,
+				5E8D30541785066B00CB41B3 /* UIViewController+CoreData.m in Sources */,
+				5E8D30571785C0A800CB41B3 /* NSManagedObject+CoreData.m in Sources */,
+				5E8D305A1785C23000CB41B3 /* NSObject+CoreData.m in Sources */,
+				5E8D305D1785C2A300CB41B3 /* NSObject+Alerts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

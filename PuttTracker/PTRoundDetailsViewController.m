@@ -1,0 +1,50 @@
+#import "PTRoundDetailsViewController.h"
+#import "PTRound.h"
+#import "UIViewController+CoreData.h"
+#import "NSDate+Formatting.h"
+
+@interface PTRoundDetailsViewController () <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *date;
+@property (weak, nonatomic) IBOutlet UITextField *location;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePickerView;
+
+- (IBAction)cancelButtonClicked:(UIBarButtonItem *)sender;
+- (IBAction)saveButtonClicked:(UIBarButtonItem *)sender;
+- (IBAction)datePickerViewValueChanged:(UIDatePicker *)sender;
+
+@end
+
+@implementation PTRoundDetailsViewController
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	self.date.inputView = self.datePickerView;
+	self.date.text = self.datePickerView.date.stringFromDate;
+	[self.date becomeFirstResponder];
+}
+
+- (IBAction)cancelButtonClicked:(UIBarButtonItem *)sender {
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)saveButtonClicked:(UIBarButtonItem *)sender {
+	PTRound *round = [PTRound newEntity];
+	round.location = self.location.text;
+	round.date = [NSDate dateFromString:self.date.text];
+	[self save];
+	
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)datePickerViewValueChanged:(UIDatePicker *)sender {
+	self.date.text = sender.date.stringFromDate;
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+	return textField == self.date ? NO : YES;
+}
+
+@end

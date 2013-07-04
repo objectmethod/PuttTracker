@@ -1,0 +1,3 @@
+@interface PTHoleCell : UITableViewCell
+
+@end

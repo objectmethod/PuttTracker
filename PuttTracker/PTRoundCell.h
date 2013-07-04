@@ -1,0 +1,3 @@
+@interface PTRoundCell : UITableViewCell
+
+@end

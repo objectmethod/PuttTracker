@@ -1,3 +1,0 @@
-@interface PTHoleViewController : UIViewController
-
-@end
