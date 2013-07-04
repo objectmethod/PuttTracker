@@ -411,9 +411,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5EDF134F178371E400E37127 /* PuttTracker */ = {
+		5EDF134F178371E400E37127 /* Putt Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EDF1388178371E400E37127 /* Build configuration list for PBXNativeTarget "PuttTracker" */;
+			buildConfigurationList = 5EDF1388178371E400E37127 /* Build configuration list for PBXNativeTarget "Putt Tracker" */;
 			buildPhases = (
 				4401461C3C0B452C96C33071 /* Check Pods Manifest.lock */,
 				5EDF134C178371E400E37127 /* Sources */,
@@ -425,7 +425,7 @@
 			);
 			dependencies = (
 			);
-			name = PuttTracker;
+			name = "Putt Tracker";
 			productName = PuttTracker;
 			productReference = 5EDF1350178371E400E37127 /* PuttTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -471,7 +471,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5EDF134F178371E400E37127 /* PuttTracker */,
+				5EDF134F178371E400E37127 /* Putt Tracker */,
 				5EDF1374178371E400E37127 /* PuttTrackerTests */,
 				5EDF1398178375C800E37127 /* Mogenerator */,
 			);
@@ -640,7 +640,7 @@
 /* Begin PBXTargetDependency section */
 		5EDF137C178371E400E37127 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5EDF134F178371E400E37127 /* PuttTracker */;
+			target = 5EDF134F178371E400E37127 /* Putt Tracker */;
 			targetProxy = 5EDF137B178371E400E37127 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -805,7 +805,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EDF1388178371E400E37127 /* Build configuration list for PBXNativeTarget "PuttTracker" */ = {
+		5EDF1388178371E400E37127 /* Build configuration list for PBXNativeTarget "Putt Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EDF1389178371E400E37127 /* Debug */,

@@ -23,7 +23,8 @@
 	[super viewDidLoad];
 	self.date.inputView = self.datePickerView;
 	self.date.text = self.datePickerView.date.stringFromDate;
-	[self.date becomeFirstResponder];
+	[self.location becomeFirstResponder];
+	self.title = NSLocalizedString(@"Add Round", nil);
 }
 
 - (IBAction)cancelButtonClicked:(UIBarButtonItem *)sender {

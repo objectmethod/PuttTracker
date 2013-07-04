@@ -16,7 +16,7 @@
 - (void) viewDidLoad {
 	[super viewDidLoad];
 	[self addBorderToButtons];
-	self.title = self.putt == nil ? @"Add Putt" : self.putt.numberAsString;
+	self.title = self.putt == nil ? NSLocalizedString(@"Add Putt", nil) : self.putt.numberAsString;
 }
 
 - (void) addBorderToButtons {

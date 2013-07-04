@@ -9,7 +9,7 @@
 @implementation PTHole
 
 - (NSString *)description {
-	return [NSString stringWithFormat:@"Hole %d", self.numberValue];
+	return [NSString stringWithFormat:@"%@ %d", NSLocalizedString(@"Hole", nil), self.numberValue];
 }
 
 @end

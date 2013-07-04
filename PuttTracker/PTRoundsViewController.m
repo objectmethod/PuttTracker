@@ -16,6 +16,7 @@
 - (void) viewDidLoad {
 	[super viewDidLoad];
 	[self performFetch];
+	self.title = NSLocalizedString(@"Rounds", nil);
 }
 
 - (void) performFetch {

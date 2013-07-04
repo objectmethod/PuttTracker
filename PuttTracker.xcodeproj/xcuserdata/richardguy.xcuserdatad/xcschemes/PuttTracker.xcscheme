@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EDF134F178371E400E37127"
                BuildableName = "PuttTracker.app"
-               BlueprintName = "PuttTracker"
+               BlueprintName = "Putt Tracker"
                ReferencedContainer = "container:PuttTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EDF134F178371E400E37127"
             BuildableName = "PuttTracker.app"
-            BlueprintName = "PuttTracker"
+            BlueprintName = "Putt Tracker"
             ReferencedContainer = "container:PuttTracker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EDF134F178371E400E37127"
             BuildableName = "PuttTracker.app"
-            BlueprintName = "PuttTracker"
+            BlueprintName = "Putt Tracker"
             ReferencedContainer = "container:PuttTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EDF134F178371E400E37127"
             BuildableName = "PuttTracker.app"
-            BlueprintName = "PuttTracker"
+            BlueprintName = "Putt Tracker"
             ReferencedContainer = "container:PuttTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

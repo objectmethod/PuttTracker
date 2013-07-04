@@ -9,31 +9,31 @@
 + (NSString *)descriptionForZone:(NSInteger)zone {
 	switch (zone) {
 		case 1:
-			return @"Long left";
+			return NSLocalizedString(@"Long left", nil);
 			break;
 		case 2:
-			return @"Long";
+			return NSLocalizedString(@"Long", nil);
 			break;
 		case 3:
-			return @"Long right";
+			return NSLocalizedString(@"Long right", nil);
 			break;
 		case 4:
-			return @"Left";
+			return NSLocalizedString(@"Left", nil);
 			break;
 		case 5:
-			return @"Holed";
+			return NSLocalizedString(@"Holed", nil);
 			break;
 		case 6:
-			return @"Right";
+			return NSLocalizedString(@"Right", nil);
 			break;
 		case 7:
-			return @"Short left";
+			return NSLocalizedString(@"Short left", nil);
 			break;
 		case 8:
-			return @"Short";
+			return NSLocalizedString(@"Short", nil);
 			break;
 		case 9:
-			return @"Short right";
+			return NSLocalizedString(@"Short right", nil);
 			break;
 		default:
 			return @"";
@@ -61,37 +61,37 @@
 - (NSString *)numberAsString {
 	switch (self.numberValue) {
 		case 1:
-			return @"First putt";
+			return NSLocalizedString(@"First putt", nil);
 			break;
 		case 2:
-			return @"Second putt";
+			return NSLocalizedString(@"Second putt", nil);
 			break;
 		case 3:
-			return @"Third putt";
+			return NSLocalizedString(@"Third putt", nil);
 			break;
 		case 4:
-			return @"Fourth putt";
+			return NSLocalizedString(@"Fourth putt", nil);
 			break;
 		case 5:
-			return @"Fifth putt";
+			return NSLocalizedString(@"Fifth putt", nil);
 			break;
 		case 6:
-			return @"Sixth putt";
+			return NSLocalizedString(@"Sixth putt", nil);
 			break;
 		case 7:
-			return @"Seventh putt";
+			return NSLocalizedString(@"Seventh putt", nil);
 			break;
 		case 8:
-			return @"Eight putt";
+			return NSLocalizedString(@"Eight putt", nil);
 			break;
 		case 9:
-			return @"Ninth putt";
+			return NSLocalizedString(@"Ninth putt", nil);
 			break;
 		case 10:
-			return @"Tenth putt";
+			return NSLocalizedString(@"Tenth putt", nil);
 			break;
 		default:
-			return @"No way! Seriously?";
+			return NSLocalizedString(@"No way! Seriously?", nil);
 			break;
 	}
 }
