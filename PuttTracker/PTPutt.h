@@ -3,6 +3,8 @@
 
 @interface PTPutt : _PTPutt {}
 
+@property (readonly) NSString *numberAsString;
+
 + (NSInteger) nextAvailableNumberForHole:(PTHole*)hole;
 
 + (NSString*) descriptionForZone:(NSInteger)zone;

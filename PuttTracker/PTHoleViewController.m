@@ -9,10 +9,36 @@
 @interface PTHoleViewController () <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (assign, nonatomic) BOOL shouldCheckForPutts;
 
 @end
 
 @implementation PTHoleViewController
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	self.shouldCheckForPutts = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	[self checkForPutts];
+}
+
+- (void) checkForPutts {
+	if (self.shouldCheckForPutts) {
+		if (self.hole.putts.count == 0) {
+			self.shouldCheckForPutts = NO;
+			PTPuttViewController *puttViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PTPuttViewController class])];
+			puttViewController.hole = self.hole;
+			[self.navigationController pushViewController:puttViewController animated:NO];
+		}
+	}
+}
 
 - (void)setHole:(PTHole *)hole {
 	_hole = hole;
@@ -73,7 +99,6 @@
 		[putt delete];
     }
 }
-
 
 #pragma mark - fetchedResultsController
 

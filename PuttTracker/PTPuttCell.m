@@ -9,7 +9,8 @@
 }
 
 - (void) updateUI {
-	self.textLabel.text = self.putt.description;
+	self.textLabel.text = self.putt.numberAsString;
+	self.detailTextLabel.text = self.putt.description;
 }
 
 @end

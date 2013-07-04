@@ -2,6 +2,8 @@
 #import "PTRound.h"
 #import "UIViewController+CoreData.h"
 #import "NSDate+Formatting.h"
+#import "NSObject+Alerts.h"
+#import "NSString+Trimming.h"
 
 @interface PTRoundDetailsViewController () <UITextFieldDelegate>
 
@@ -29,12 +31,16 @@
 }
 
 - (IBAction)saveButtonClicked:(UIBarButtonItem *)sender {
-	PTRound *round = [PTRound newEntity];
-	round.location = self.location.text;
-	round.date = [NSDate dateFromString:self.date.text];
-	[self save];
-	
-	[self.navigationController popViewControllerAnimated:YES];
+	if (self.location.text.trim.length > 0) {
+		PTRound *round = [PTRound newEntity];
+		round.location = self.location.text.trim;
+		round.date = [NSDate dateFromString:self.date.text];
+		[self save];
+		
+		[self.navigationController popViewControllerAnimated:YES];
+	} else {
+		[self showAlertWithMessage:NSLocalizedString(@"Location is required", nil)];
+	}
 }
 
 - (IBAction)datePickerViewValueChanged:(UIDatePicker *)sender {

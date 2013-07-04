@@ -68,6 +68,9 @@
 		5E8D305D1785C2A300CB41B3 /* NSObject+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D305C1785C2A300CB41B3 /* NSObject+Alerts.m */; };
 		5E8D30601785F64600CB41B3 /* PTHoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D305F1785F64600CB41B3 /* PTHoleViewController.m */; };
 		5E8D30631785F73100CB41B3 /* PTPuttCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D30621785F73100CB41B3 /* PTPuttCell.m */; };
+		5E8D306517860C6600CB41B3 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D306417860C6600CB41B3 /* icon-57.png */; };
+		5E8D306717860C6C00CB41B3 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D306617860C6C00CB41B3 /* icon-114.png */; };
+		5E8D306A178614F100CB41B3 /* NSString+Trimming.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D3069178614F100CB41B3 /* NSString+Trimming.m */; };
 		5EDF1354178371E400E37127 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1353178371E400E37127 /* UIKit.framework */; };
 		5EDF1356178371E400E37127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1355178371E400E37127 /* Foundation.framework */; };
 		5EDF1358178371E400E37127 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF1357178371E400E37127 /* CoreGraphics.framework */; };
@@ -167,6 +170,10 @@
 		5E8D305F1785F64600CB41B3 /* PTHoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHoleViewController.m; sourceTree = "<group>"; };
 		5E8D30611785F73000CB41B3 /* PTPuttCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPuttCell.h; sourceTree = "<group>"; };
 		5E8D30621785F73100CB41B3 /* PTPuttCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPuttCell.m; sourceTree = "<group>"; };
+		5E8D306417860C6600CB41B3 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		5E8D306617860C6C00CB41B3 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
+		5E8D3068178614F000CB41B3 /* NSString+Trimming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trimming.h"; sourceTree = "<group>"; };
+		5E8D3069178614F100CB41B3 /* NSString+Trimming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trimming.m"; sourceTree = "<group>"; };
 		5EDF1350178371E400E37127 /* PuttTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuttTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDF1353178371E400E37127 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EDF1355178371E400E37127 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -278,6 +285,8 @@
 		5EDF1347178371E400E37127 = {
 			isa = PBXGroup;
 			children = (
+				5E8D306617860C6C00CB41B3 /* icon-114.png */,
+				5E8D306417860C6600CB41B3 /* icon-57.png */,
 				5EDF135B178371E400E37127 /* PuttTracker */,
 				5EDF137D178371E400E37127 /* PuttTrackerTests */,
 				5EDF1352178371E400E37127 /* Frameworks */,
@@ -360,6 +369,8 @@
 				5E8D305F1785F64600CB41B3 /* PTHoleViewController.m */,
 				5E8D30611785F73000CB41B3 /* PTPuttCell.h */,
 				5E8D30621785F73100CB41B3 /* PTPuttCell.m */,
+				5E8D3068178614F000CB41B3 /* NSString+Trimming.h */,
+				5E8D3069178614F100CB41B3 /* NSString+Trimming.m */,
 			);
 			path = PuttTracker;
 			sourceTree = "<group>";
@@ -510,6 +521,8 @@
 				5E5178071784A0D00040D793 /* short-568h@2x.png in Resources */,
 				5E5178081784A0D00040D793 /* short.png in Resources */,
 				5E5178091784A0D00040D793 /* short@2x.png in Resources */,
+				5E8D306517860C6600CB41B3 /* icon-57.png in Resources */,
+				5E8D306717860C6C00CB41B3 /* icon-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +622,7 @@
 				5E8D305D1785C2A300CB41B3 /* NSObject+Alerts.m in Sources */,
 				5E8D30601785F64600CB41B3 /* PTHoleViewController.m in Sources */,
 				5E8D30631785F73100CB41B3 /* PTPuttCell.m in Sources */,
+				5E8D306A178614F100CB41B3 /* NSString+Trimming.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@
 - (void) viewDidLoad {
 	[super viewDidLoad];
 	[self addBorderToButtons];
+	self.title = self.putt == nil ? @"Add Putt" : self.putt.numberAsString;
 }
 
 - (void) addBorderToButtons {
@@ -25,7 +26,7 @@
 }
 
 - (NSMutableArray *)buttons {
-	if (_buttons == nil) {
+	if (_buttons == nil || _buttons.count == 0) {
 		_buttons = [[NSMutableArray alloc] init];
 		
 		for (UIButton *button in self.view.subviews) {
