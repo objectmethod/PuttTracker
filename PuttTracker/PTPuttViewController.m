@@ -59,6 +59,7 @@
 	
 	if (self.putt == nil) {
 		putt = [PTPutt newEntity];
+		putt.numberValue = [PTPutt nextAvailableNumberForHole:self.hole];
 	} else {
 		putt = self.putt;
 	}

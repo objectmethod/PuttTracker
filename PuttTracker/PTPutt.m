@@ -41,6 +41,19 @@
 	}
 }
 
++ (NSInteger)nextAvailableNumberForHole:(PTHole *)hole {
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"hole == %@", hole];
+	NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"number" ascending:YES];
+	NSArray *putts = [PTPutt allObjectsWithPredicate:predicate sortDescriptor:sortDescriptor];
+	
+	if (putts.count > 0) {
+		PTPutt *lastPutt = [putts lastObject];
+		return lastPutt.numberValue + 1;
+	}
+	
+	return 1;
+}
+
 - (NSString *)description {
 	return [PTPutt descriptionForZone:self.resultValue];
 }

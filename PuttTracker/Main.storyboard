@@ -410,7 +410,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <navigationItem key="navigationItem" title="Rounds" id="CdV-Id-y7Z">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="IKM-d6-Ixq">
                             <connections>
-                                <segue destination="fG6-xq-mIz" kind="push" id="a0H-8n-8ka"/>
+                                <segue destination="fG6-xq-mIz" kind="push" identifier="" id="a0H-8n-8ka"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -437,9 +437,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </class>
         <class className="PTHoleViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PTHoleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addPuttButtonClicked:" candidateClass="UIBarButtonItem"/>
-            </relationships>
         </class>
         <class className="PTPuttCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PTPuttCell.h"/>
