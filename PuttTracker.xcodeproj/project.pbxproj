@@ -174,7 +174,7 @@
 		5E8D306617860C6C00CB41B3 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
 		5E8D3068178614F000CB41B3 /* NSString+Trimming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trimming.h"; sourceTree = "<group>"; };
 		5E8D3069178614F100CB41B3 /* NSString+Trimming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trimming.m"; sourceTree = "<group>"; };
-		5EDF1350178371E400E37127 /* PuttTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuttTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDF1350178371E400E37127 /* Putt Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Putt Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDF1353178371E400E37127 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EDF1355178371E400E37127 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5EDF1357178371E400E37127 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -204,7 +204,7 @@
 		5EDF139E1783764B00E37127 /* _PTRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PTRound.m; sourceTree = "<group>"; };
 		5EDF139F1783764B00E37127 /* PTRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRound.h; sourceTree = "<group>"; };
 		5EDF13A01783764B00E37127 /* PTRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRound.m; sourceTree = "<group>"; };
-		5EDF13A31783766600E37127 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5EDF13A31783766600E37127 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5EDF13A5178376D200E37127 /* _PTHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PTHole.h; sourceTree = "<group>"; };
 		5EDF13A6178376D200E37127 /* _PTHole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PTHole.m; sourceTree = "<group>"; };
 		5EDF13A7178376D200E37127 /* _PTPutt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PTPutt.h; sourceTree = "<group>"; };
@@ -299,7 +299,7 @@
 		5EDF1351178371E400E37127 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5EDF1350178371E400E37127 /* PuttTracker.app */,
+				5EDF1350178371E400E37127 /* Putt Tracker.app */,
 				5EDF1375178371E400E37127 /* PuttTrackerTests.octest */,
 			);
 			name = Products;
@@ -427,7 +427,7 @@
 			);
 			name = "Putt Tracker";
 			productName = PuttTracker;
-			productReference = 5EDF1350178371E400E37127 /* PuttTracker.app */;
+			productReference = 5EDF1350178371E400E37127 /* Putt Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5EDF1374178371E400E37127 /* PuttTrackerTests */ = {

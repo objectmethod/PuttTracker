@@ -73,7 +73,7 @@
                         <!--2013-07-04 12:40:38 +0000-->
                     </date>
                     <timeZone key="timeZone" name="America/Los_Angeles">
-                        <mutableData key="data">
+                        <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -91,7 +91,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                     </timeZone>
                     <connections>
                         <action selector="datePickerViewValueChanged:" destination="fG6-xq-mIz" eventType="valueChanged" id="uSs-iY-YjE"/>
@@ -127,7 +127,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="J2y-lg-ydE" kind="push" id="WFA-0L-Nkq"/>
+                                    <segue destination="J2y-lg-ydE" kind="push" identifier="ShowHoleViewController" id="WFA-0L-Nkq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -438,43 +438,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="short_left.png" width="106" height="139"/>
         <image name="short_right.png" width="107" height="138"/>
     </resources>
-    <classes>
-        <class className="PTHoleCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTHoleCell.h"/>
-        </class>
-        <class className="PTHoleViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTHoleViewController.h"/>
-        </class>
-        <class className="PTPuttCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTPuttCell.h"/>
-        </class>
-        <class className="PTPuttViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTPuttViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonClicked:" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="PTRoundCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTRoundCell.h"/>
-        </class>
-        <class className="PTRoundDetailsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTRoundDetailsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelButtonClicked:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="datePickerViewValueChanged:" candidateClass="UIDatePicker"/>
-                <relationship kind="action" name="saveButtonClicked:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="date" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="datePickerView" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="location" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="PTRoundViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTRoundViewController.h"/>
-        </class>
-        <class className="PTRoundsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PTRoundsViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

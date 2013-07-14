@@ -20,6 +20,26 @@
 	[self updateUI];
 }
 
+#pragma mark - notifications
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHole:) name:@"NOTIFICATION_SHOW_HOLE" object:nil];
+}
+
+- (void)dealloc {
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:@"NOTIFICATION_SHOW_HOLE" object:nil];
+}
+
+- (void) showHole:(NSNotification*)notification {
+	PTHole *hole = notification.object;
+	PTHoleCell *cell = [[PTHoleCell alloc] init];
+	cell.hole = hole;
+	[self.navigationController popToViewController:self animated:NO];
+	[self performSegueWithIdentifier:@"ShowHoleViewController" sender:cell];
+}
+
 #pragma mark - seque
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

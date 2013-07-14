@@ -2,6 +2,9 @@
 #import "PTPutt.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIViewController+CoreData.h"
+#import "PTHole.h"
+#import "PTRound.h"
+#import "PTHoleViewController.h"
 
 @interface PTPuttViewController ()
 
@@ -71,7 +74,14 @@
 	
 	self.putt = putt;
 	
-	[self.navigationController popViewControllerAnimated:YES];
+	if (putt.resultValue == 5) {
+		int nextHoleNumber = self.hole.numberValue + 1;
+		PTHole *nextHole = [[[self.hole.round.holes allObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"number == %d", nextHoleNumber]] lastObject];
+
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"NOTIFICATION_SHOW_HOLE" object:nextHole];
+	} else {
+		[self.navigationController popViewControllerAnimated:YES];
+	}
 }
 
 - (void)deselectAllButtons {
