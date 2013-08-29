@@ -8,3 +8,5 @@ pod 'BlocksKit'
 
 pod 'CocoaLumberjack'
 pod 'NSLogger-CocoaLumberjack-connector'
+
+pod 'MFSideMenu', '~> 0.5.2'
